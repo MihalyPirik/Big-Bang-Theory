@@ -13,9 +13,12 @@ import { RouterLink } from 'vue-router';
 
 let seasons = ref([]);
 seasons.value = getSeasons()
-.then((res) => {
-    seasons.value = res;
-});
+    .then((res) => {
+        seasons.value = res;
+    })
+    .catch((err) => {
+        console.log(err);
+    });
 
 </script>
 

@@ -9,9 +9,4 @@
 </script>
 
 <style scoped>
-div {
-    box-sizing: border-box;
-    position: absolute;
-    top: calc(100% - 40px);
-}
 </style>

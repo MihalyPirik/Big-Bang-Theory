@@ -15,7 +15,7 @@ const router = createRouter({
       component: SeasonView
     },
     {
-      path: '/epizodok/:seasonId',
+      path: '/epizodok/:id',
       component: EpsiodesView
     },
   ]
