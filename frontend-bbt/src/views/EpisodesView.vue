@@ -1,7 +1,7 @@
 <template>
-    <div class="container">
+    <div class="container" style="min-height: 40vw">
         <div class="row">
-            <div v-for="e of episodes" class="col-md-4">
+            <div v-for="e of episodes" class="col-md-4" id="card">
                 <EpisodeCard :episode="e" />
             </div>
         </div>
@@ -24,4 +24,8 @@ episodes.value = getEpisodes(useRoute().params.id)
     });
 </script>
 
-<style scoped></style>
+<style scoped>
+#card {
+    margin-bottom: 20px;
+}
+</style>

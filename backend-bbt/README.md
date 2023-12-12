@@ -6,6 +6,8 @@
 composer install
 ```
 
+### .env.example -> .env
+
 ### Key generate
 
 ```sh

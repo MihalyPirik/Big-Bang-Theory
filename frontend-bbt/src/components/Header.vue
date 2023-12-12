@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid bg-primary">
-        <p class="text-white text-center">Fejléc</p>
+        <p class="text-white text-center">Nav</p>
     </div>
     <NavVue />
 </template>
@@ -9,4 +9,9 @@
 import NavVue from './Nav.vue';
 </script>
 
-<style scoped></style>
+<style scoped>
+* {
+    margin: 0px;
+    padding: 0px;
+}
+</style>

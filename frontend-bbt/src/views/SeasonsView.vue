@@ -1,9 +1,12 @@
 <template>
-    <ul>
-        <li v-for="s of seasons">
-            <RouterLink :to="'/epizodok/' + s.season">{{ s }}</RouterLink>
-        </li>
-    </ul>
+    <div class="container" style="min-height: 40vw">
+        <h1 class="display-5 text-center">Évadok</h1>
+        <div class="row">
+            <div class="col-3 text-center" v-for="s of seasons">
+                <RouterLink :to="'/epizodok/' + s.season"><p>{{ s.season + ". évad" }}</p></RouterLink>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script setup>
